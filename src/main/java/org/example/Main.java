@@ -9,14 +9,22 @@ public class Main {
         Scanner entrada = new Scanner(System.in);
 
 
-        System.out.println("Digite a sua nota: ");
-        double nota = entrada.nextDouble();
+        System.out.println("Digite o primeiro número: ");
+        int num1 = entrada.nextInt();
 
-        if (nota >= 7){
-            System.out.println("Aprovado");
-        }else {
-            System.out.println("Reprovado");
+        System.out.println("Digite o segundo múmero: ");
+        int num2 = entrada.nextInt();
+
+        if(num1 > num2){
+            System.out.println("O " + num1 + " é maior que " +num2);
         }
+        if(num1 < num2){
+            System.out.println("O " + num2 + " é maior que " +num1);
+        }else{
+            System.out.println("Os números são iguais");
+        }
+
+
 
 
     }
